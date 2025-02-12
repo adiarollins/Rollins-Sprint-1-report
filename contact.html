@@ -15,8 +15,34 @@
       <a href="/" aria-current="page">Contact</a>
     </nav>
     <main>
-      <h1>My other page</h1>
-      <p>Consider the design of this page before or while you are creating it, what details will you need from someone who would like to contact you? Please do not enter your contact details as a contact page.</p>
+      <h1>Contact</h1>
+      <!--<p>Consider the design of this page before or while you are creating it, what details will you need from someone who would like to contact you? Please do not enter your contact details as a contact page.</p>-->
+      <form class="contact">
+        <table style="border: 2px solid #000000; border-radius: 4px; padding: 5px; margin: 30px;">
+          <colgroup>
+            <col>  
+            <col style="width: 900px">  
+            <col>
+          </colgroup>
+          <tr>
+            <th><label for="fname">First name:</label></th>
+            <td><input type="text" id="fname" name="fname" style="width: 200px"></td><br>
+          </tr>
+          <tr>
+            <th><label for="lname">Last name:</label></th>
+            <td><input type="text" id="lname" name="lname" style="width: 200px"></td><br>
+          </tr>
+          <tr>
+            <th><label for="email">Email:</label></th>
+            <td><input type="text" id="email" name="lname" style="width: 400px"></td><br>
+          </tr>
+          <tr>
+            <th><label for="comments">Comments:</label></th>
+            <td><textarea style="width: 700px; height: 200px;"></textarea></td><br>
+          </tr>
+        </table>
+        <input type="submit" value="Submit">
+      </form>
     </main>
   </body>
 </html>
