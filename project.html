@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <nav>
@@ -17,7 +17,10 @@
     <main>
       <h1 style="text-align: center">Projects</h1>
       <!--<p>A section hightlighting technologies you work with (eg. HTML/CSS, python etc) description of when you have used it</p>-->
-      <section class="project">
+      <div class="project">
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
         <div class="projectFloppyBlurb" style="order: 1">
           <a class="floppyBlurb" href="https://adiarollins.itch.io/floppyblurb"><h3>Floppy Blurb</a><i> - Unity Game</i></h3>
           <ul class="floppyBlurb">
@@ -26,6 +29,10 @@
             <li>Utilized C# for scripting to handle player controls, physics, and game logic</li>
           </ul>
         </div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
         <div class="projectHangMan" style="order: 3">
           <a class="hangMan" href="https://github.com/adiarollins/Hangman"><h3 class="hangMan">HangMan</a><i> - Java Class Project</i></h3>
           <ul class="hangMan">
@@ -34,6 +41,10 @@
             <li>Implemented a system to track player progress, including lives lost from incorrect guesses, ensuring an engaging user experience</li>
           </ul>
         </div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
         <div class="projectHackaton" style="order: 2">
           <a class="Hackaton" href="https://michaelabate819.wixsite.com/soulfuel"><h3 class="Hackaton">HBCU GOOGLE Hack-a-ton</a><i> - Soul Fuel</i></h3>
           <ul class="Hackaton">
@@ -43,7 +54,20 @@
             <li>Utilized Wix website builder to create a design for the website</li>
           </ul>
         </div>
-      </section>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span>  
+    </div>
+    
     </main>
   </body>
 </html>
